@@ -7,16 +7,25 @@ from nltk.stem.porter import PorterStemmer
 
 ps = PorterStemmer()
 
-# Download required NLTK data
-try:
-    nltk.data.find('tokenizers/punkt')
-except LookupError:
-    nltk.download('punkt')
+import nltk
+import os
 
-try:
-    nltk.data.find('corpora/stopwords')
-except LookupError:
-    nltk.download('stopwords')
+# Set writable download path
+nltk.data.path.append('/tmp')
+
+def download_nltk():
+    try:
+        nltk.data.find('tokenizers/punkt')
+    except LookupError:
+        nltk.download('punkt', download_dir='/tmp')
+        nltk.download('punkt_tab', download_dir='/tmp')
+
+    try:
+        nltk.data.find('corpora/stopwords')
+    except LookupError:
+        nltk.download('stopwords', download_dir='/tmp')
+
+download_nltk()
 
 
 def transform_text(text):
