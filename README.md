@@ -86,8 +86,4 @@ spam-detector/
 
 ---
 
-## 🔗 Links
-https://spam-detector-yvxs9mmkn6sumxug2chaqg.streamlit.app/
-
-- 🎯 **Live Demo:** [link]
-- 📓 **Notebook:** [link]
+https://spam-detector-yvxs9mmkn6sumxug2ch
