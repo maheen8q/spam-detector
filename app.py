@@ -77,7 +77,7 @@ st.markdown('''
 ''', unsafe_allow_html=True)
 
 st.markdown('<div class="input-section">', unsafe_allow_html=True)
-st.markdown('<h2 class="section-title">📨 Analyze Message</h2>', unsafe_allow_html=True)
+st.markdown('<h2 class="section-title"> Analyze Message</h2>', unsafe_allow_html=True)
 
 message = st.text_area(
     label='',
